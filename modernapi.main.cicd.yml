@@ -30,7 +30,7 @@ stages:
        summaryFileLocation: '**/*coverage.cobertura.xml'
     - task: Docker@2
       displayName: 'Build Customer API and Deploy to ACR'
-      inputs:
+      inputs:      
        containerRegistry: 'cnstraacr'
        repository: 'modernapi'
        command: 'buildAndPush'
