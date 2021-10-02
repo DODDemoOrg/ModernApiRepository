@@ -31,7 +31,7 @@ stages:
     - task: Docker@2
       displayName: 'Build Customer API and Deploy to ACR'
       inputs:
-       containerRegistry: 'lodAcr'
+       containerRegistry: 'CNSTRAAcr'
        repository: 'modernapi'
        command: 'buildAndPush'
        Dockerfile: '$(Build.SourcesDirectory)/ModernApiApp.Dockerfile'
